@@ -40,6 +40,8 @@
 		824C673C1F95E1880067A5AE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		824C673D1F95E1890067A5AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		824C67421F95E2120067A5AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TableView.storyboard; sourceTree = "<group>"; };
+		824C67441F95F9BA0067A5AE /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		824C67451F95F9BA0067A5AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,8 @@
 		8212B9D51F94D1780074F0D8 = {
 			isa = PBXGroup;
 			children = (
+				824C67441F95F9BA0067A5AE /* LICENSE */,
+				824C67451F95F9BA0067A5AE /* README.md */,
 				8212B9E01F94D1780074F0D8 /* XCTest_UITest_UISlider */,
 				8212BA001F94D1780074F0D8 /* XCTest_UITest_UISliderUITests */,
 				8212B9DF1F94D1780074F0D8 /* Products */,
