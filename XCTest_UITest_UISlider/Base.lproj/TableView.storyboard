@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Frb-AX-OiE">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="r15-fc-3bS">
+            <objects>
+                <tableViewController id="Frb-AX-OiE" customClass="TableViewController" customModule="XCTest_Unit_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="f9P-Ya-eer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="09h-z3-P2T" customClass="TableViewCell" customModule="XCTest_Unit_UI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09h-z3-P2T" id="8NN-Dl-O2K">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-GP-bwx">
+                                            <rect key="frame" x="20" y="12.333333333333336" width="335" height="70"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mLO-b5-g79">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Z-pi-htF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
+                                                            <state key="normal" title="Test Button"/>
+                                                            <connections>
+                                                                <action selector="tapButton:" destination="09h-z3-P2T" eventType="touchUpInside" id="r5O-tN-MkQ"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzF-8T-bpg">
+                                                            <rect key="frame" x="317" y="0.0" width="18" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HDf-vQ-Rko">
+                                                    <rect key="frame" x="-2" y="40" width="339" height="31"/>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="09h-z3-P2T" eventType="valueChanged" id="VBG-UX-PRb"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="HDf-vQ-Rko" secondAttribute="trailing" id="25D-oI-Sco"/>
+                                                <constraint firstItem="mLO-b5-g79" firstAttribute="leading" secondItem="Beh-GP-bwx" secondAttribute="leading" id="bwr-Mc-SYV"/>
+                                                <constraint firstAttribute="trailing" secondItem="mLO-b5-g79" secondAttribute="trailing" id="ncB-vK-Z60"/>
+                                                <constraint firstItem="HDf-vQ-Rko" firstAttribute="leading" secondItem="Beh-GP-bwx" secondAttribute="leading" id="tRh-lX-S4l"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Beh-GP-bwx" firstAttribute="centerX" secondItem="8NN-Dl-O2K" secondAttribute="centerX" id="1Vd-8r-nQf"/>
+                                        <constraint firstAttribute="trailing" secondItem="Beh-GP-bwx" secondAttribute="trailing" constant="20" symbolic="YES" id="3l1-fl-ghS"/>
+                                        <constraint firstItem="Beh-GP-bwx" firstAttribute="leading" secondItem="8NN-Dl-O2K" secondAttribute="leading" constant="20" symbolic="YES" id="Ugk-Wj-XaI"/>
+                                        <constraint firstItem="Beh-GP-bwx" firstAttribute="centerY" secondItem="8NN-Dl-O2K" secondAttribute="centerY" id="Z84-HQ-ici"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="Z2Z-pi-htF" id="GYP-aZ-PDj"/>
+                                    <outlet property="valueLabel" destination="LzF-8T-bpg" id="xME-yb-abS"/>
+                                    <outlet property="valueSlider" destination="HDf-vQ-Rko" id="YSj-1k-n97"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Frb-AX-OiE" id="auN-Jk-T3J"/>
+                            <outlet property="delegate" destination="Frb-AX-OiE" id="15J-82-Pdx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7a-U0-sD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648.79999999999995" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
