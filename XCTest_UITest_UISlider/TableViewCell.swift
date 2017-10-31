@@ -14,6 +14,12 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var valueSlider: UISlider!
     @IBOutlet weak var button: UIButton!
     
+    var configureValue: Float? {
+        didSet {
+            configure(with: configureValue!)
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,7 +32,6 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        
     }
 
     func configure(with value: Float) {

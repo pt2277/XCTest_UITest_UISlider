@@ -54,7 +54,7 @@ class TableViewController
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
 
         // Configure the cell...
-        cell.configure(with: Float(data[indexPath.row]))
+        cell.configureValue = Float(data[indexPath.row])
         
         cell.accessibilityLabel = "cell \(indexPath.row)"
         cell.valueSlider.accessibilityLabel = "value label"
